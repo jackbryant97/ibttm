@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 2rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+body {
+  font-family: "EB Garamond", serif;
+  line-height: 1.6;
+  background: rgb(54, 50, 49);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(244, 244, 244);
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: lighter;
+  color: rgb(244, 244, 244);
+  padding-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  color: rgb(244, 244, 244);
+}
+
+img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero {
+  background: url("../../dist/img/hero-resized.jpg") no-repeat center center/cover;
+  height: 100vh;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+#hero .hero-container .main-nav {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 500ms;
+}
+#hero .hero-container .main-nav #logo {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: lighter;
+  color: rgb(244, 244, 244);
+  padding-left: 1rem;
+  padding-bottom: 0;
+}
+#hero .hero-container .main-nav ul {
+  display: flex;
+}
+#hero .hero-container .main-nav li {
+  font-size: 1.3rem;
+  padding: 0 1rem;
+}
+#hero .hero-container .main-nav a {
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 200ms ease;
+}
+#hero .hero-container .main-nav a:hover {
+  border-color: rgb(244, 244, 244);
+}
+#hero .hero-container .main-nav a#logo {
+  border-bottom: none;
+}
+#hero .hero-content {
+  padding-top: 4rem;
+}
+
+#music {
+  text-align: center;
+}
+#music img {
+  height: 30%;
+  width: 30%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+#music .music-links {
+  height: 500px;
+  margin: auto;
+}
+#music .music-links ul:first-child {
+  border-top: 2px solid rgb(180, 160, 160);
+}
+#music .music-links a {
+  width: 1200px;
+  display: inline-block;
+  padding: 2rem;
+  border-bottom: 2px solid rgb(180, 160, 160);
+  text-align: center;
+  color: rgb(180, 160, 160);
+  transition: color 200ms ease;
+}
+#music .music-links a:hover {
+  color: rgb(244, 244, 244);
+}
+
+#tour {
+  text-align: center;
+}
+
+#media {
+  text-align: center;
+}
+#media .container {
+  padding-bottom: 2rem;
+}
+#media .images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+#media .images .box {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+#footer {
+  height: 6rem;
+  background: #292625;
+}
+#footer .container {
+  justify-content: space-between;
+  height: 90px;
+}
+#footer .container p {
+  text-align: left;
+  color: rgb(180, 160, 160);
+  font-size: 1rem;
+}
+#footer .container .socials a {
+  color: rgb(180, 160, 160);
+  padding-left: 1rem;
+  transition: color 200ms ease;
+}
+#footer .container .socials a:hover {
+  color: rgb(244, 244, 244);
+}
+
+@media (max-width: 900px) {
+  #hero {
+    height: 75vh;
+  }
+  #hero .hero-container .main-nav {
+    display: none;
+  }
+  #music {
+    padding-top: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  body h1 {
+    font-size: 2rem;
+  }
+  body p {
+    font-size: 0.8rem;
+  }
+  body #hero {
+    height: 60vh;
+    background-position-x: 46%;
+  }
+  body #hero .hero-content {
+    padding-top: 1rem;
+    text-align: center;
+  }
+  body #hero .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  body #music {
+    padding-top: 1rem;
+  }
+  body #music img {
+    width: 100%;
+  }
+  body #music p {
+    padding-top: 1.5rem;
+  }
+  body #music .music-links {
+    height: 350px;
+  }
+  body #music .music-links a {
+    padding: 1.5rem;
+  }
+  body #tour .container {
+    padding: 1rem 0;
+  }
+  body #tour h1 {
+    padding: 0;
+  }
+  body #media .images {
+    grid-template-columns: 1fr;
+  }
+  body #footer .container {
+    padding: 0 1rem;
+  }
+  body #footer .container p {
+    font-size: 0.5rem;
+  }
+  body #footer .container a {
+    font-size: 1.5rem;
+  }
+}
+@media (max-height: 420px) {
+  body h1 {
+    font-size: 3rem;
+  }
+  body #hero {
+    height: 100vh;
+  }
+  body #hero .hero-content {
+    padding: 1rem;
+  }
+  body #music {
+    padding: 1rem;
+  }
+  body #music img {
+    width: 50%;
+  }
+  body #music p {
+    padding-top: 1rem;
+  }
+  body #music .music-links {
+    height: 450px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
