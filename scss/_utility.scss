@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: $website-width;
+  padding: 0 2rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'EB Garamond', serif;
+  line-height: 1.6;
+  background: $dark-color;
+}
+
+a {
+  text-decoration: none;
+  color: $light-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: lighter;
+  color: $light-color;
+  padding-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  color: $light-color;
+}
+
+img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

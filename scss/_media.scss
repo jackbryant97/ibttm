@@ -1,0 +1,119 @@
+@media (max-width: 900px) {
+  #hero {
+    height: 75vh;
+
+    .hero-container {
+      .main-nav {
+        display: none;
+      }
+    }
+  }
+
+  #music {
+    padding-top: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    #hero {
+      height: 60vh;
+      background-position-x: 46%;
+
+      .hero-content {
+        padding-top: 1rem;
+        text-align: center;
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    #music {
+      padding-top: 1rem;
+
+      img {
+        width: 100%;
+      }
+
+      p {
+        padding-top: 1.5rem;
+      }
+
+      .music-links {
+        height: 350px;
+
+        a {
+          padding: 1.5rem;
+        }
+      }
+    }
+
+    #tour {
+      .container {
+        padding: 1rem 0;
+      }
+      h1 {
+        padding: 0;
+      }
+    }
+
+    #media {
+      .images {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    #footer {
+      .container {
+        padding: 0 1rem;
+        p {
+          font-size: 0.5rem;
+        }
+
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 420px) {
+  body {
+    h1 {
+      font-size: 3rem;
+    }
+    #hero {
+      height: 100vh;
+
+      .hero-content {
+        padding: 1rem;
+      }
+    }
+
+    #music {
+      padding: 1rem;
+
+      img {
+        width: 50%;
+      }
+
+      p {
+        padding-top: 1rem;
+      }
+
+      .music-links {
+        height: 450px;
+      }
+    }
+  }
+}
