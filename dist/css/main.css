@@ -153,6 +153,12 @@ img {
   color: rgb(180, 160, 160);
   font-size: 1rem;
 }
+#footer .container a {
+  color: rgb(180, 160, 160);
+}
+#footer .container a:hover {
+  color: rgb(244, 244, 244);
+}
 #footer .container .socials a {
   color: rgb(180, 160, 160);
   padding-left: 1rem;
@@ -218,8 +224,8 @@ img {
   body #footer .container {
     padding: 0 1rem;
   }
-  body #footer .container p {
-    font-size: 0.5rem;
+  body #footer .container p a{
+    font-size: 1rem;
   }
   body #footer .container a {
     font-size: 1.5rem;
